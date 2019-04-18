@@ -17,33 +17,7 @@ function renderCoffees(coffees) {
     }
     return html;
 }
-// var coffee3 = function myFunction() {
-//     var coffeeSearch = document.forms.search.coffeeSearch;
-//     var coffeeFilter = coffeeSearch.value.toUpperCase();
-//     var coffee3 = [];
-//     coffees.forEach(function (value, i) {
-//         if(coffees[i].name.toUpperCase().indexOf(coffeeFilter) > -1){
-//             coffee3.push(coffees[i]);}
-//     });
-//     tbody.innerHTML = renderCoffees(coffee3);
-//     return coffee3;
-// };
 
-// function myFunction(input) {
-//     var coffeeSearch = document.getElementById("coffeeSearch");
-//     var coffeeFilter = coffeeSearch.value.toUpperCase();
-//     if (coffees[input].name.toUpperCase().indexOf(coffeeFilter) > -1){
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-
-// var coffeeSearch = document.getElementById("coffeeSearch");
-// coffeeSearch.addEventListener("keyup", function () {
-//     var searchedCoffee = document.getElementById("coffeeSearch").value;
-//     console.log(searchedCoffee)
-// });
 
 var coffeeSearch = document.getElementById("coffeeSearch");
 var coffeeFilter = function(){return coffeeSearch.value.toUpperCase();};
