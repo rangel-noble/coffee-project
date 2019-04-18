@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Coffee Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,6 +11,7 @@
     <form>
         <label for="roast-selection"></label>
         <select id="roast-selection">
+            <option>all</option>
             <option>light</option>
             <option>medium</option>
             <option>dark</option>
@@ -18,16 +19,32 @@
         <input id="submit" type="submit" />
     </form>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>ROAST</th>
-            </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+    <input type="text" name="coffeeSearch" id="coffeeSearch" placeholder="Enter name of coffee">
+
+    <div id="coffees"> </div>
+    <br>
+    <form>
+        <label for="addCoffeeRoast">Add Coffee</label>
+        <br>
+        <select id="addCoffeeRoast">
+            <option>light</option>
+            <option>medium</option>
+            <option>dark</option>
+        </select>
+        <br>
+        <input type="text" name="addCoffeeName" id="addCoffeeName">
+        <input id="add" type="submit" />
+    </form>
+    <!--<table>-->
+        <!--<thead>-->
+            <!--<tr>-->
+                <!--<th>ID</th>-->
+                <!--<th>NAME</th>-->
+                <!--<th>ROAST</th>-->
+            <!--</tr>-->
+        <!--</thead>-->
+        <!--<tbody id="coffees"></tbody>-->
+    <!--</table>-->
 
     <script src="main.js"></script>
 </body>
