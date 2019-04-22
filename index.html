@@ -20,33 +20,43 @@
         <div class="col-6">
 
             <form>
+                <div class="form-group">
                 <label for="roast-selection">Roast</label><br>
-                <select id="roast-selection" class="custom-select">
+                <select class="form-control" id="roast-selection" class="custom-select">
                     <option>all</option>
                     <option>light</option>
                     <option>medium</option>
                     <option>dark</option>
                 </select>
-                <label for="coffeeSearch">Coffee Name</label><br>
-                <input type="text" name="coffeeSearch" id="coffeeSearch" placeholder="Enter name of coffee"><br>
-                <button type="button" class="btn btn-primary" input id="submit" type="submit">Submit</button>
+                </div>
+
+                <label for="coffeeSearch">Coffee Name</label>
+                <input class="form-control" type="text" name="coffeeSearch" id="coffeeSearch" placeholder="Enter name of coffee" class="form-control">
+                <button type="button" class="btn btn-primary btn-lg btn-block" input id="submit" type="submit">Submit</button>
+
+                <hr>
 
             </form>
-            <div class="row">
 
-                <br>
+            <h2 class="text-center">Add a Coffee</h2>
+
+            <div class="row">
+                <div class="col-12">
+
+
+
                 <form>
-                    <label for="addCoffeeRoast">Add Coffee</label>
-                    <br>
-                    <select id="addCoffeeRoast" class="custom-select">
+                    <div class="form-group">
+                    <label for="addCoffeeRoast">Roast</label><br>
+                    <select class="form-control" id="addCoffeeRoast" class="custom-select">
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
                     </select>
-                    <br>
-                    <label for="addCoffeeName">Name</label><br>
-                    <input type="text" name="addCoffeeName" id="addCoffeeName"><br>
-                    <button type="button" class="btn btn-primary" input id="add" type="submit">Submit</button>
+                    </div>
+                    <label for="addCoffeeName">Name</label>
+                    <input class="form-control" type="text" name="addCoffeeName" id="addCoffeeName" class="form-control">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" input id="add" type="submit">Submit</button>
 
                 </form>
             </div>
@@ -54,7 +64,7 @@
 
     </div>
 </div>
-
+</div>
 
 
 <script src="main.js"></script>
